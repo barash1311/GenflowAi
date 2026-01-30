@@ -6,7 +6,7 @@ This repository focuses on the **Java Spring Boot backend** and its integration 
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 The core idea behind GeoFlow AI is simple:
 
@@ -24,7 +24,7 @@ The backend is intentionally designed to be:
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 **High-level flow:**
 
@@ -38,7 +38,7 @@ Frontend → Java Backend → Python ML Service → Java Backend → Database
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 **Backend**
 
@@ -65,7 +65,7 @@ Frontend → Java Backend → Python ML Service → Java Backend → Database
 
 ---
 
-## 🗄 Database Design
+## Database Design
 
 The backend uses a normalized schema focused on traceability and reproducibility.
 
@@ -87,7 +87,7 @@ Each prediction can be traced back to:
 
 ---
 
-## 🔄 Prediction Workflow
+## Prediction Workflow
 
 1. User submits a prompt
 2. Backend stores the prompt in the database
@@ -100,7 +100,7 @@ The Python service **never writes directly to the database**.
 
 ---
 
-## 🔐 Security
+## Security
 
 * JWT-based authentication
 * Role-based access control
@@ -122,7 +122,7 @@ The Python service **never writes directly to the database**.
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 backend/
@@ -137,7 +137,7 @@ backend/
 
 ---
 
-## 📈 Future Improvements
+## Future Improvements
 
 * API Gateway integration
 * Redis caching
@@ -147,6 +147,6 @@ backend/
 
 ---
 
-## ✨ Notes
+## Notes
 
 This backend is built with real-world system design principles in mind and is suitable for academic projects, portfolio demonstrations, and further production hardening.
