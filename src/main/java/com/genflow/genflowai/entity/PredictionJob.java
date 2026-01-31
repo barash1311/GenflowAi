@@ -1,5 +1,6 @@
 package com.genflow.genflowai.entity;
 
+import com.genflow.genflowai.entity.enums.Status;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;

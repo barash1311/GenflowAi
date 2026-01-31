@@ -1,10 +1,10 @@
 package com.genflow.genflowai.entity;
 
+import com.genflow.genflowai.entity.enums.Role;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 
-import java.time.Instant;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
