@@ -1,4 +1,4 @@
-package com.genflow.genflowai.entity;
+package com.genflow.genflowai.entity.enums;
 
 public enum Status {
     PENDING,
