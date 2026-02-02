@@ -146,7 +146,3 @@ backend/
 * CI/CD pipeline
 
 ---
-
-## Notes
-
-This backend is built with real-world system design principles in mind and is suitable for academic projects, portfolio demonstrations, and further production hardening.
