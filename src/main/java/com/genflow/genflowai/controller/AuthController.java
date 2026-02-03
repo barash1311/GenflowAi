@@ -10,8 +10,11 @@ import com.genflow.genflowai.dto.LoginRequest;
 import com.genflow.genflowai.dto.LoginResponse;
 import com.genflow.genflowai.dto.RegisterRequest;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 @RestController
 @RequestMapping("/api/v1/auth")
+@Tag(name = "Auth", description = "Authentication APIs")
 public class AuthController {
 
     @PostMapping("/login")

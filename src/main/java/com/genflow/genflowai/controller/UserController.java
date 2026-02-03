@@ -10,8 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.genflow.genflowai.dto.UserRequest;
 import com.genflow.genflowai.dto.UserResponse;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 @RestController
 @RequestMapping("/api/v1/users")
+@Tag(name = "Users", description = "User profile APIs")
 public class UserController {
 
     @GetMapping("/me")

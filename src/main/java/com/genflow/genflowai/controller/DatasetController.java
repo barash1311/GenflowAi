@@ -16,8 +16,11 @@ import com.genflow.genflowai.dto.DatasetRequest;
 import com.genflow.genflowai.dto.DatasetResponse;
 import com.genflow.genflowai.dto.PageResponse;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 @RestController
 @RequestMapping("/api/v1/datasets")
+@Tag(name = "Datasets", description = "Dataset management APIs")
 public class DatasetController {
 
     @PostMapping
