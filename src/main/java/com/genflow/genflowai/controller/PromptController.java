@@ -13,8 +13,11 @@ import com.genflow.genflowai.dto.PageResponse;
 import com.genflow.genflowai.dto.PromptRequest;
 import com.genflow.genflowai.dto.PromptResponse;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 @RestController
 @RequestMapping("/api/v1/prompts")
+@Tag(name = "Prompts", description = "Prompt management APIs")
 public class PromptController {
 
     @PostMapping

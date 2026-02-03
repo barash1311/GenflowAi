@@ -10,8 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.genflow.genflowai.dto.PredictionJobResponse;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 @RestController
 @RequestMapping("/api/v1/prediction-jobs")
+@Tag(name = "Prediction Jobs", description = "Prediction job tracking APIs")
 public class PredictionJobController {
 
     @GetMapping("/{id}")

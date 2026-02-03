@@ -11,8 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.genflow.genflowai.dto.ModelResponse;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 @RestController
 @RequestMapping("/api/v1/models")
+@Tag(name = "Models", description = "ML model APIs")
 public class ModelController {
 
     @GetMapping

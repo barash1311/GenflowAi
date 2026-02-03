@@ -14,8 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.genflow.genflowai.dto.PredictionRequest;
 import com.genflow.genflowai.dto.PredictionResponse;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 @RestController
 @RequestMapping("/api/v1/predictions")
+@Tag(name = "Predictions", description = "Prediction result APIs")
 public class PredictionController {
 
     @PostMapping
