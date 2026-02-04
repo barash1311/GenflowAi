@@ -1,17 +1,16 @@
 package com.genflow.genflowai.dto;
 
-import java.time.LocalDateTime;
-import java.util.UUID;
-
+import lombok.AllArgsConstructor;
 import lombok.Data;
-
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class ModelRequest {
-    private UUID id;
     private String name;
     private String version;
     private String algorithm;
+    private String description;
     private Float accuracy;
-    private LocalDateTime createdAt;
 }
