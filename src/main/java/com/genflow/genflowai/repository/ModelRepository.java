@@ -1,4 +1,9 @@
 package com.genflow.genflowai.repository;
 
-public interface ModelRepository {
+import com.genflow.genflowai.entity.Model;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.UUID;
+
+public interface ModelRepository extends JpaRepository<Model, UUID> {
 }
