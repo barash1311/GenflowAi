@@ -136,13 +136,3 @@ backend/
 ```
 
 ---
-
-## Future Improvements
-
-* API Gateway integration
-* Redis caching
-* Docker & Kubernetes deployment
-* Monitoring and logging
-* CI/CD pipeline
-
----
