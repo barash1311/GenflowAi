@@ -609,20 +609,6 @@ http://localhost:8080/v3/api-docs
 - Custom exceptions for domain concepts
 - Consistent error response format
 
-✅ **API Design**
-- RESTful conventions
-- Pagination support
-- Swagger documentation
-- Versioned endpoints (`/api/v1/...`)
-
-✅ **Code Quality**
-- Lombok for boilerplate reduction
-- Constructor injection
-- Immutable DTOs with AllArgsConstructor
-- Consistent naming conventions
-
----
-
 ## 📧 Support & Contributions
 
 For issues or feature requests, contact: `barash1311@gmail.com`
