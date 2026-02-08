@@ -30,8 +30,8 @@ public class ModelController {
     @GetMapping
     @Operation(summary = "Get all models", description = "Get paginated list of models")
     public ResponseEntity<PageResponse<ModelResponse>> getAllModels(
-            @RequestParam int page,
-            @RequestParam int size) {
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size) {
         return ResponseEntity.ok(modelService.getAllModels(page, size));
     }
 

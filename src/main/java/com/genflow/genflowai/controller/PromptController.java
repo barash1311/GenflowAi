@@ -37,8 +37,8 @@ public class PromptController {
     @GetMapping
     @Operation(summary = "Get all prompts", description = "Get paginated list of prompts")
     public ResponseEntity<PageResponse<PromptResponse>> getAllPrompts(
-            @RequestParam int page,
-            @RequestParam int size) {
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size) {
         return ResponseEntity.ok(promptService.getAllPrompts(page, size));
     }
 
@@ -46,8 +46,8 @@ public class PromptController {
     @Operation(summary = "Get prompts by dataset", description = "Get paginated list of prompts for a dataset")
     public ResponseEntity<PageResponse<PromptResponse>> getPromptsByDataset(
             @PathVariable UUID datasetId,
-            @RequestParam int page,
-            @RequestParam int size) {
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size) {
         return ResponseEntity.ok(promptService.getPromptsByDataset(datasetId, page, size));
     }
 

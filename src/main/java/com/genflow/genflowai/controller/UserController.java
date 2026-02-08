@@ -43,8 +43,8 @@ public class UserController {
     @GetMapping
     @Operation(summary = "Get all users", description = "Get paginated list of users (ADMIN only)")
     public ResponseEntity<PageResponse<UserResponse>> getAllUsers(
-            @RequestParam int page,
-            @RequestParam int size) {
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size) {
         return ResponseEntity.ok(userService.getAllUsers(page, size));
     }
 

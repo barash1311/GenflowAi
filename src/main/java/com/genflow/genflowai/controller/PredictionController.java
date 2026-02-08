@@ -38,8 +38,8 @@ public class PredictionController {
     @GetMapping
     @Operation(summary = "Get all predictions", description = "Get paginated list of predictions")
     public ResponseEntity<PageResponse<PredictionResponse>> getAllPredictions(
-            @RequestParam int page,
-            @RequestParam int size) {
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size) {
         return ResponseEntity.ok(predictionService.getAllPredictions(page, size));
     }
 
@@ -47,8 +47,8 @@ public class PredictionController {
     @Operation(summary = "Get predictions by prompt", description = "Get paginated list of predictions for a prompt")
     public ResponseEntity<PageResponse<PredictionResponse>> getPredictionsByPrompt(
             @PathVariable UUID promptId,
-            @RequestParam int page,
-            @RequestParam int size) {
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size) {
         return ResponseEntity.ok(predictionService.getPredictionsByPrompt(promptId, page, size));
     }
 }
